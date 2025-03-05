@@ -3,7 +3,7 @@ const btn = document.querySelector("button");
 
 
 const processData = new Promise(async (resolve, reject) => {
-    const res = await fetch("http://127.0.0.1:5501/spa-012-asynchronous-programming-fetch-MrMister20257/data.txt");
+    const res = await fetch("data.txt");
     const data = await res.text();
     const wordArray = data.split(/\s+/).sort((a, b) => a.localeCompare(b));
 
